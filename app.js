@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let scoreDisplay = document.querySelector("#score");
   let score = 0;
   let timerId = 0;
-  movetrump();
+
 
   function movetrump() {
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (let i = 0; i <squares.length; i++) {
     let item = squares[i];
-    item.addEventListener("click", () => {
+    item.addEventListener("mousedown", () => {
       hitPosition++;
       if (item.id == hitPosition) {
         score++;
@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  
+    movetrump();
+  
   function countDown(){
     currentTime.innerHTML=currentTime.innerHTML-1
     if(currentTime.innerHTML==0)
