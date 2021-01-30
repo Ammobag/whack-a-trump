@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (let i = 0; i <squares.length; i++) {
     let item = squares[i];
-    item.addEventListener("mousedown", () => {
+    item.addEventListener("click", () => {
       hitPosition++;
       if (item.id == hitPosition) {
         score++;
