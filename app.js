@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function movetrump() {
 
-    timerId = setInterval(appearTrump, 600);
+    timerId = setInterval(appearTrump, 700);
   }
 
   function appearTrump() {
